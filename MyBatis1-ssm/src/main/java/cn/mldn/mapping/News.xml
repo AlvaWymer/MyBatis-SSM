@@ -44,6 +44,7 @@
 	<!-- 此时的参数类型如果要想起作用，那么必须在mybatis.cfg.xml文件中配置一个别名 -->
 	<!--   keyProperty 表示 数据库中要进行自动增长的主键  返回的类的属性的名字 -->
 	<!-- useGeneratedKeys 指的是 -->
+	<!-- 注意：    这里面的id 必须要和 INewsDAO 里面的方法的名字一致   这样才能够找到对应的方法，实现面向接口编程 -->
 	<insert id="doCreate" parameterType="News" keyProperty="nid" useGeneratedKeys="true">
 		INSERT INTO news(title,note) VALUES (#{title},#{note}) ;
 	</insert>
