@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 此处定义的是VO类与SQL语句之间的处理关系，namespace描述的是一个命名空间 -->
+<mapper namespace="cn.mldn.mapping.MembersNS">
+	<select id="getAllCount" parameterType="map" resultType="long">
+		SELECT COUNT(*) FROM members WHERE ${column} LIKE #{keyWord}
+	</select>
+
+	<select id="findAllSplit" parameterType="map" resultType="Member">
+		SELECT mid,name,note FROM members
+		WHERE ${column} LIKE #{keyWord} LIMIT #{start},#{lineSize}
+	</select>
+
+	<select id="findMap" resultType="map">
+		SELECT mid,name,note FROM members ;
+	</select>
+
+	<!-- 此时的查询一定返回多行记录，但是这多行记录里面都是News的VO对象 -->
+	<select id="findAll" resultType="Member">
+		SELECT mid,name,note FROM members 
+	</select>
+
+	<!-- resultType就是返回的VO类型（别名） -->
+	<select id="findById" parameterType="Long" resultType="Member">
+		SELECT mid,name,note FROM members WHERE mid=#{mid}
+	</select>
+
+	<!-- 如果此时只传递有一个参数，则在使用的时候参数名称可以随意写 -->
+	<delete id="doDelete" parameterType="Long">
+		DELETE FROM members WHERE mid=#{midxxxx}
+	</delete>
+
+	<update id="doUpdate" parameterType="Member">
+		UPDATE members SET name=#{name},note=#{note} WHERE mid=#{mid} ;
+	</update>
+	<!-- 实现增加的SQL语句，paraemterType表示参数类型 -->
+	<!-- 此时的参数类型如果要想起作用，那么必须在mybatis.cfg.xml文件中配置一个别名 -->
+	<!--   keyProperty 表示 数据库中要进行自动增长的主键  返回的类的属性的名字 -->
+	<!-- useGeneratedKeys 指的是 -->
+	<insert id="doCreate" parameterType="Member" keyProperty="mid" useGeneratedKeys="true">
+		INSERT INTO members(name,note) VALUES (#{name},#{note}) ;
+	</insert>
+</mapper>

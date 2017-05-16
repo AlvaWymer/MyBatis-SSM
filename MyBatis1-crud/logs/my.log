@@ -1,0 +1,275 @@
+2017-05-15 23:15:22,006 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2017-05-15 23:15:22,038 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mldn - 338(String), 测试名字(String), 19(Integer), 1.1(Double), 2017-05-15 23:15:21.484(Timestamp), 是个好人。(String)
+2017-05-15 23:15:22,039 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - <==    Updates: 1
+2017-05-16 00:10:29,425 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO Member(name,note) VALUES (?,?) ; 
+2017-05-16 00:10:29,451 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:17:12,506 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO Member(name,note) VALUES (?,?) ; 
+2017-05-16 00:17:12,537 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:19:07,635 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO Members(name,note) VALUES (?,?) ; 
+2017-05-16 00:19:07,664 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:19:07,667 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:20:19,730 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:20:19,759 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:20:19,760 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:20:37,979 DEBUG [cn.mldn.mapping.MembersNS.doUpdate] - ==>  Preparing: UPDATE members SET name=?,note=? WHERE mid=? ; 
+2017-05-16 00:20:38,008 DEBUG [cn.mldn.mapping.MembersNS.doUpdate] - ==> Parameters: 下午捆了吗？(String), 捆也没用，继续上课，好好学习，天天向上。(String), 2(Long)
+2017-05-16 00:20:38,016 DEBUG [cn.mldn.mapping.MembersNS.doUpdate] - <==    Updates: 1
+2017-05-16 00:20:54,391 DEBUG [cn.mldn.mapping.MembersNS.doDelete] - ==>  Preparing: DELETE FROM members WHERE mid=? 
+2017-05-16 00:22:44,620 DEBUG [cn.mldn.mapping.MembersNS.doDelete] - ==>  Preparing: DELETE FROM members WHERE mid=? 
+2017-05-16 00:23:58,960 DEBUG [cn.mldn.mapping.MembersNS.doDelete] - ==>  Preparing: DELETE FROM members WHERE mid=? 
+2017-05-16 00:23:58,988 DEBUG [cn.mldn.mapping.MembersNS.doDelete] - ==> Parameters: 2(Long)
+2017-05-16 00:23:58,991 DEBUG [cn.mldn.mapping.MembersNS.doDelete] - <==    Updates: 1
+2017-05-16 00:24:39,687 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==>  Preparing: SELECT mid,name,note FROM members WHERE mid=? 
+2017-05-16 00:24:39,716 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==> Parameters: 9(Long)
+2017-05-16 00:24:39,735 DEBUG [cn.mldn.mapping.MembersNS.findById] - <==      Total: 0
+2017-05-16 00:24:48,232 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==>  Preparing: SELECT mid,name,note FROM members WHERE mid=? 
+2017-05-16 00:24:48,264 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==> Parameters: 2(Long)
+2017-05-16 00:24:48,279 DEBUG [cn.mldn.mapping.MembersNS.findById] - <==      Total: 0
+2017-05-16 00:25:03,494 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==>  Preparing: SELECT mid,name,note FROM members WHERE mid=? 
+2017-05-16 00:25:03,524 DEBUG [cn.mldn.mapping.MembersNS.findById] - ==> Parameters: 1(Long)
+2017-05-16 00:25:03,538 TRACE [cn.mldn.mapping.MembersNS.findById] - <==    Columns: mid, name, note
+2017-05-16 00:25:03,538 TRACE [cn.mldn.mapping.MembersNS.findById] - <==        Row: 1, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:25:03,543 DEBUG [cn.mldn.mapping.MembersNS.findById] - <==      Total: 1
+2017-05-16 00:25:36,563 DEBUG [cn.mldn.mapping.MembersNS.findAll] - ==>  Preparing: SELECT mid,name,note FROM members 
+2017-05-16 00:25:36,594 DEBUG [cn.mldn.mapping.MembersNS.findAll] - ==> Parameters: 
+2017-05-16 00:25:36,612 TRACE [cn.mldn.mapping.MembersNS.findAll] - <==    Columns: mid, name, note
+2017-05-16 00:25:36,613 TRACE [cn.mldn.mapping.MembersNS.findAll] - <==        Row: 1, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:25:36,616 DEBUG [cn.mldn.mapping.MembersNS.findAll] - <==      Total: 1
+2017-05-16 00:26:11,606 DEBUG [cn.mldn.mapping.MembersNS.findMap] - ==>  Preparing: SELECT mid,name,note FROM members ; 
+2017-05-16 00:26:11,638 DEBUG [cn.mldn.mapping.MembersNS.findMap] - ==> Parameters: 
+2017-05-16 00:26:11,651 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==    Columns: mid, name, note
+2017-05-16 00:26:11,652 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 1, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:26:11,655 DEBUG [cn.mldn.mapping.MembersNS.findMap] - <==      Total: 1
+2017-05-16 00:26:23,410 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:26:23,438 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:26:23,440 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:26:26,019 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:26:26,059 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:26:26,060 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:26:28,427 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:26:28,457 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:26:28,458 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,355 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,385 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,386 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,388 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,388 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,389 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,389 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,390 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,390 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,391 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,391 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,392 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,392 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,392 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,393 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,393 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,394 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,394 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,394 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,395 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,395 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,396 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,398 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,398 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,399 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,399 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,399 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,400 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,400 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,400 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,401 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,401 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,402 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,402 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,402 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,403 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,403 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,404 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,404 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,404 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,405 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,405 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,405 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,406 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,406 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,406 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,407 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,408 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,409 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,409 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,409 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,409 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,410 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,410 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,410 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,411 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,411 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,411 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,411 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,415 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,415 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,415 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,416 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,416 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,416 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,417 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,417 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,417 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,418 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,418 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,418 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,419 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,419 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,419 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,420 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,420 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,420 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,421 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,421 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,421 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,422 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,422 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,422 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,422 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,423 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,423 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,423 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,423 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,424 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,424 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,424 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,424 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,425 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,425 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,425 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,426 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,426 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,426 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,427 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,427 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,427 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,427 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,428 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,428 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,428 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,429 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,429 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,429 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,430 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,430 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,430 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,431 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,431 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,431 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,432 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,432 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,433 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,433 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,433 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,434 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,434 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,434 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,435 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,435 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,435 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,436 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,436 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,436 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,437 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,437 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,437 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,438 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,438 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,438 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,439 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,439 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,439 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,440 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,440 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,441 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,441 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,442 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,442 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,442 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,443 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,443 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,443 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:36,444 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==>  Preparing: INSERT INTO members(name,note) VALUES (?,?) ; 
+2017-05-16 00:27:36,444 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-05-16 00:27:36,444 DEBUG [cn.mldn.mapping.MembersNS.doCreate] - <==    Updates: 1
+2017-05-16 00:27:55,701 DEBUG [cn.mldn.mapping.MembersNS.findMap] - ==>  Preparing: SELECT mid,name,note FROM members ; 
+2017-05-16 00:27:55,731 DEBUG [cn.mldn.mapping.MembersNS.findMap] - ==> Parameters: 
+2017-05-16 00:27:55,748 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==    Columns: mid, name, note
+2017-05-16 00:27:55,748 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 1, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,753 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 3, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,753 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 4, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,753 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 5, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,753 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 6, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,754 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 7, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,754 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 8, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,754 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 9, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,755 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 10, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,755 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 11, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,755 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 12, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,755 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 13, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,756 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 14, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,756 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 15, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,756 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 16, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,756 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 17, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,758 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 18, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,758 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 19, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,758 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 20, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,758 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 21, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,759 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 22, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,759 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 23, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,759 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 24, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,759 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 25, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,759 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 26, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 27, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 28, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 29, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 30, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 31, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 32, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,760 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 33, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 34, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 35, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 36, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 37, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 38, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 39, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,761 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 40, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,762 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 41, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,762 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 42, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 43, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 44, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 45, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 46, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 47, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,764 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 48, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 49, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 50, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 51, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 52, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 53, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,765 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 54, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,766 TRACE [cn.mldn.mapping.MembersNS.findMap] - <==        Row: 55, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:27:55,766 DEBUG [cn.mldn.mapping.MembersNS.findMap] - <==      Total: 54
+2017-05-16 00:28:16,041 DEBUG [cn.mldn.mapping.MembersNS.findAllSplit] - ==>  Preparing: SELECT mid,name,note FROM members WHERE name LIKE ? LIMIT ?,? 
+2017-05-16 00:28:16,069 DEBUG [cn.mldn.mapping.MembersNS.findAllSplit] - ==> Parameters: %饿%(String), 8(Long), 2(Integer)
+2017-05-16 00:28:16,083 TRACE [cn.mldn.mapping.MembersNS.findAllSplit] - <==    Columns: mid, name, note
+2017-05-16 00:28:16,083 TRACE [cn.mldn.mapping.MembersNS.findAllSplit] - <==        Row: 10, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:28:16,087 TRACE [cn.mldn.mapping.MembersNS.findAllSplit] - <==        Row: 11, 中午肚子饿了么？, <<BLOB>>
+2017-05-16 00:28:16,087 DEBUG [cn.mldn.mapping.MembersNS.findAllSplit] - <==      Total: 2
+2017-05-16 00:28:30,582 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM members WHERE name LIKE ? 
+2017-05-16 00:28:30,612 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - ==> Parameters: %饿%(String)
+2017-05-16 00:28:30,630 TRACE [cn.mldn.mapping.MembersNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:28:30,630 TRACE [cn.mldn.mapping.MembersNS.getAllCount] - <==        Row: 54
+2017-05-16 00:28:30,631 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - <==      Total: 1
+2017-05-16 00:40:06,349 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM members WHERE name LIKE ? 
+2017-05-16 00:40:06,381 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - ==> Parameters: %饿%(String)
+2017-05-16 00:40:06,396 TRACE [cn.mldn.mapping.MembersNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:40:06,396 TRACE [cn.mldn.mapping.MembersNS.getAllCount] - <==        Row: 54
+2017-05-16 00:40:06,397 DEBUG [cn.mldn.mapping.MembersNS.getAllCount] - <==      Total: 1

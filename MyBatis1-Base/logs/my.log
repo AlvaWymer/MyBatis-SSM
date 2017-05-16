@@ -1,0 +1,3 @@
+2017-05-15 23:15:22,006 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2017-05-15 23:15:22,038 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mldn - 338(String), 测试名字(String), 19(Integer), 1.1(Double), 2017-05-15 23:15:21.484(Timestamp), 是个好人。(String)
+2017-05-15 23:15:22,039 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - <==    Updates: 1
