@@ -53,7 +53,7 @@
 			
 			<dependency>
 				<groupId>MyBatis1</groupId>
-				<artifactId>MyBatis1-ssm</artifactId>
+				<artifactId>MyBatis1-ssm3</artifactId>
 				<version>${MyBatis1.version}</version>
 			</dependency>
 
@@ -260,6 +260,7 @@
 		<module>MyBatista-Util</module>
     <module>MyBatis1-crud</module>
     <module>MyBatis1-Web</module>
-    <module>MyBatis1-ssm</module>
+    <!-- <module>MyBatis1-ssm</module> -->
+    <module>MyBatis1-ssm3</module>
   </modules>
 </project>

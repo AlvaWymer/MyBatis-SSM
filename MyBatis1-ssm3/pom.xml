@@ -7,13 +7,12 @@
     <artifactId>MyBatis1</artifactId>
     <version>0.0.1</version>
   </parent>
- <!--  <groupId>MyBatis1-ssm</groupId> -->
-  <artifactId>MyBatis1-ssm</artifactId>
-<!--   <version>0.0.1</version>
- -->   
-<packaging>jar</packaging> 
-  <name>MyBatis1-ssm Maven Webapp</name>
+  <artifactId>MyBatis1-ssm3</artifactId>
+  <name>MyBatis1-ssm3</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -107,7 +106,4 @@
 			<scope>test</scope>
 		</dependency>
 </dependencies>
-  <build>
-    <finalName>MyBatis1-ssm</finalName>
-  </build>
 </project>

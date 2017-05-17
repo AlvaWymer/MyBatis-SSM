@@ -7,16 +7,16 @@
     <artifactId>MyBatis1</artifactId>
     <version>0.0.1</version>
   </parent>
- <!--  <groupId>MyBatis1-Web</groupId> -->
+   <groupId>MyBatis1-Web</groupId>
   <artifactId>MyBatis1-Web</artifactId>
- <!--  <version>0.0.1</version> -->
+  <version>0.0.1</version> 
   <packaging>war</packaging>
   <name>MyBatis1-Web Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
 		 <dependency>
 			<groupId>MyBatis1</groupId>
-			<artifactId>MyBatis1-ssm</artifactId>
+			<artifactId>MyBatis1-ssm3</artifactId>
 		</dependency>  
 	</dependencies>
 
